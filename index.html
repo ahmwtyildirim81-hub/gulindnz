@@ -3,116 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gülin & Deniz</title>
+    <title>Erişim Engellendi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blocked.css">
 </head>
 <body>
-    <!-- Ana Bölüm -->
-    <section class="hero-section">
-        <div class="main-couple">
-            <h1 class="couple-title">
-                <span class="name">Gülin</span>
-                <span class="ampersand">&</span>
-                <span class="name">Deniz</span>
-            </h1>
-            <div class="heart-icon">
-                <i class="fa-solid fa-heart"></i>
+    <div class="container">
+        <div class="blocked-content">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-ban"></i>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fa-solid fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Atasözleri Bölümü -->
-    <section class="story-section scroll-reveal">
-        <div class="content-box">
-            <h2 class="section-title">Atasözleri</h2>
-            <p class="story-text">
-                "Gönül ne kahve ister ne kahvehane, gönül sohbet ister kahve bahane"
-            </p>
-        </div>
-    </section>
-
-    <!-- Özel Anlar -->
-    <section class="moments-section scroll-reveal">
-        <div class="content-box">
-            <h2 class="section-title">Özel Anlar</h2>
-            <div class="moments-grid">
-                <div class="moment-card">
-                    <div class="moment-icon">
-                        <i class="fa-solid fa-mug-saucer"></i>
-                    </div>
-                    <p>Teneffüslerde birlikte çay içmek</p>
-                </div>
-                <div class="moment-card">
-                    <div class="moment-icon">
-                        <i class="fa-solid fa-book"></i>
-                    </div>
-                    <p>Ders çalışırken birbirine yardım etmek</p>
-                </div>
-                <div class="moment-card">
-                    <div class="moment-icon">
-                        <i class="fa-solid fa-music"></i>
-                    </div>
-                    <p>Aynı şarkıları dinlemek</p>
-                </div>
-                <div class="moment-card">
-                    <div class="moment-icon">
-                        <i class="fa-regular fa-comment"></i>
-                    </div>
-                    <p>Saatlerce konuşmak</p>
-                </div>
+            <h1 class="title">ERİŞİM ENGELLENDİ</h1>
+            <div class="divider"></div>
+            <p class="main-message">Yengeniz İzin Vermedi</p>
+            <p class="sub-message">Bu sayfaya erişim yetkiniz bulunmamaktadır.</p>
+            <p class="reason">Yenge kızdı.</p>
+            
+            <div class="error-code">
+                <p>Hata Kodu: 403 - FORBIDDEN</p>
+                <p class="timestamp" id="timestamp"></p>
             </div>
-        </div>
-    </section>
 
-    <!-- Baldızlar Bölümü -->
-    <section class="baldiz-section scroll-reveal">
-        <div class="content-box">
-            <h2 class="section-title small-title">Ve Baldız</h2>
-            <div class="baldiz-couple">
-                <h3 class="baldiz-names">Ada Su</h3>
-                <p class="baldiz-subtitle">baldız</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer-section scroll-reveal">
-        <p class="footer-text">Şakadı<picture>
-            <source media="(min-width: ampersand
-            )" srcset="">
-            <img src="" alt="">
-        </picture></p>
-        <p class="footer-year">2026</p>
-        
-        <!-- Gizli Disclaimer Butonu -->
-        <button class="disclaimer-btn" id="disclaimerBtn">
-            <i class="fa-solid fa-circle-info"></i>
-        </button>
-        
-        <!-- Gizli Disclaimer Modal -->
-        <div class="disclaimer-modal" id="disclaimerModal">
-            <div class="disclaimer-content">
-                <button class="close-btn" id="closeBtn">
-                    <i class="fa-solid fa-xmark"></i>
+            <div class="actions">
+                <button class="btn-primary" onclick="window.location.reload()">
+                    <i class="fa-solid fa-rotate-right"></i> Tekrar Dene
                 </button>
-                <h3>⚠️ Yasal Uyarı</h3>
-                <p>Bu web sitesi tamamen eğlence ve şaka amaçlı oluşturulmuştur.</p>
-                <p>Sitede yer alan tüm içerikler gerçek değildir ve herhangi bir ciddiyet taşımamaktadır.</p>
-                <p>Burada belirtilen kişiler, ilişkiler ve bilgiler tamamen kurgusaldır.</p>
-                <p>Site sahipleri, içerikten kaynaklanan herhangi bir sorumluluk kabul etmemektedir.</p>
-                <p>Bu siteyi ziyaret ederek yukarıdaki şartları kabul etmiş sayılırsınız.</p>
-                <p style="margin-top: 20px; font-size: 0.9em; color: #999;">© 2026 - Tüm hakları saklıdır (şaka)</p>
+                <button class="btn-secondary" onclick="goBack()">
+                    <i class="fa-solid fa-arrow-left"></i> Geri Dön
+                </button>
+            </div>
+
+            <div class="footer-note">
+                <p>Eğer bu bir hata olduğunu düşünüyorsanız, lütfen melih ile iletişime geçin.</p>
             </div>
         </div>
-    </footer>
-    
-    <script src="script.js"></script>
+    </div>
+
+    <script>
+        // Timestamp
+        const now = new Date();
+        document.getElementById('timestamp').textContent = 
+            `Tarih: ${now.toLocaleDateString('tr-TR')} ${now.toLocaleTimeString('tr-TR')}`;
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
